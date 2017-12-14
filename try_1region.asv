@@ -95,10 +95,8 @@ end
 
 fa=linspace(a_min,a_max,a_num);
 fh=h;
-ho=repmat(h',[1 a_num 1]);
-ho=ho(:);
 hh=ho';
-pol_hh=hh(pol_ind);
+pol_hh=hh(pol_indx);
 ze=[pol_fn(1,:);pol_hh(1,:)];
 [hy,ax]=meshgrid(fh,fa);
 h_plo_e=reshape(pol_hh(1,:),h_num,a_num);

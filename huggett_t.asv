@@ -155,7 +155,5 @@ h_plo_e=reshape(pol_hh(1,:),h_num,a_num);
 h_plo_e=h_plo_e';
 figure (1) %policy function
 surf(hy,ax,h_plo_e)
-a_plo_e=reshape(pol_fn(1,:),h_num,a_num);
-a_plo_e=a_plo_e';
 figure (2)
-surf(hy,ax,a_plo_e)
+surf
